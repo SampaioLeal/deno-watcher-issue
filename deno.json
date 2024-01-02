@@ -1,0 +1,12 @@
+{
+  "tasks": {
+    "dev": "deno run --watch --unstable-sloppy-imports --env -A main.ts",
+    "prisma:generate": "deno run -A npm:prisma generate"
+  },
+  "imports": {
+    "deno/": "https://deno.land/std@0.210.0/",
+    "oak/": "https://deno.land/x/oak@v12.6.1/",
+    "prisma": "./prisma/generated/client/index.js",
+    "prisma/types": "./prisma/generated/client/index.d.ts"
+  }
+}
